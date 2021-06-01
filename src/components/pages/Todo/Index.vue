@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <h1>Todo</h1>
+  <div class="todo-page">
 
     <TodoInput @save="onSave"></TodoInput>
-
-    <EsButton @click="show">bbb</EsButton>
-    <EsButton @click="load">load</EsButton>
+    <TodoMenu>
+      <EsButton @click="show">bbb</EsButton>
+      <EsButton @click="load">load</EsButton>
+    </TodoMenu>
 
     <TodoList
         :list="items"
@@ -15,17 +15,18 @@
 </template>
 
 <script>
-import TodoList from "@/components/pages/TodoList";
 import {RepositoryFactory} from '@/components/repositories/RepositoryFactory';
-import TodoInput from "@/components/pages/TodoInput";
-import EsButton from "@/components/shared/EsButton";
+import TodoList from "@/components/pages/Todo/components/TodoList";
+import TodoInput from "@/components/pages/Todo/components/TodoInput";
+import EsButton from "@/components/shared/EsButton/EsButton";
+import TodoMenu from "@/components/pages/Todo/components/TodoMenu";
 
 const TodoRepository = RepositoryFactory.get('todo');
 
 
 export default {
   name: "Todo",
-  components: {EsButton, TodoInput, TodoList},
+  components: {TodoMenu, EsButton, TodoInput, TodoList},
   data() {
     return {
       items: []
@@ -82,5 +83,9 @@ export default {
 </script>
 
 <style scoped>
+.todo-page{
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 </style>

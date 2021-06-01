@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import TodoItem from "@/components/pages/TodoItem";
+import TodoItem from "@/components/pages/Todo/components/TodoItem";
 
 export default {
   name: "TodoList",
@@ -53,7 +53,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
-
+  width: 100%;
   min-width: 640px;
   padding: 0;
   margin: 0 auto;
