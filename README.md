@@ -1,28 +1,16 @@
-# 
+# todo-electron
+
+electron + vue3 のTodoアプリ
 
 
 
-
-
-## Project setup
+## electronによるbuild
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+$ electron:build
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
 
-### Lints and fixes files
+## electronの動作テスト
 ```
-yarn lint
+$ electron:serve
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
