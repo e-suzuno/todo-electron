@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import TodoItem from "@/components/pages/TodoItem";
+import TodoItem from "@/components/pages/Todo/components/TodoItem";
 
 export default {
   name: "TodoList",

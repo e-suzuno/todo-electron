@@ -4,7 +4,7 @@
 
 <script>
 
-import Todo from "@/components/pages/Todo";
+import Todo from "@/components/pages/Todo/Index";
 export default {
   name: 'App',
   components: {
