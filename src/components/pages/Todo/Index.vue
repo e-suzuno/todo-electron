@@ -1,9 +1,7 @@
 <template>
   <div class="todo-page">
-    <h1>Todo</h1>
 
     <TodoInput @save="onSave"></TodoInput>
-
     <TodoMenu>
       <EsButton @click="show">bbb</EsButton>
       <EsButton @click="load">load</EsButton>
