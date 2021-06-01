@@ -6,11 +6,11 @@ electron + vue3 のTodoアプリ
 
 ## electronによるbuild
 ```
-$ electron:build
+$ npm run electron:build
 ```
 
 
 ## electronの動作テスト
 ```
-$ electron:serve
+$ npm run electron:serve
 ```
