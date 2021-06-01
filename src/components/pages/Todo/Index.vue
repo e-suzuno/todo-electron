@@ -1,9 +1,8 @@
 <template>
-  <div class="todo-page">
-
+  <div>
     <TodoInput @save="onSave"></TodoInput>
     <TodoMenu>
-      <EsButton @click="omReload">reload</EsButton>
+      <EsButton @click="onLoad">load</EsButton>
     </TodoMenu>
 
     <TodoList
@@ -32,13 +31,12 @@ export default {
     }
   },
   created() {
-    this.load();
+    this.onLoad();
   },
   methods: {
-    omReload: function () {
+    onLoad: function () {
       TodoRepository.index({})
           .then(response => {
-
             console.log(response);
             this.items = response;
           })
@@ -60,8 +58,8 @@ export default {
       console.log(todo)
       TodoRepository.store(todo)
           .then(() => {
-            console.log(this);
-            this.load();
+            this.onLoad();
+
           })
           .catch(error => {
             console.log(error)
@@ -71,7 +69,7 @@ export default {
       TodoRepository.delete(key)
           .then((response) => {
             console.log(response);
-            this.load();
+            this.onLoad();
           })
           .catch((error) => {
             console.log(error);
@@ -82,9 +80,5 @@ export default {
 </script>
 
 <style scoped>
-.todo-page{
-  max-width: 800px;
-  margin: 0 auto;
-}
 
 </style>
