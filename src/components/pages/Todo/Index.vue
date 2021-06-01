@@ -3,8 +3,7 @@
 
     <TodoInput @save="onSave"></TodoInput>
     <TodoMenu>
-      <EsButton @click="show">bbb</EsButton>
-      <EsButton @click="load">load</EsButton>
+      <EsButton @click="omReload">reload</EsButton>
     </TodoMenu>
 
     <TodoList
@@ -36,7 +35,7 @@ export default {
     this.load();
   },
   methods: {
-    load: function () {
+    omReload: function () {
       TodoRepository.index({})
           .then(response => {
 
