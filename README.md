@@ -1,29 +1,14 @@
-# vue-typescript-sample
+# todo-electron
 
-## Project setup
-```
-yarn install
-```
+electron + vue3 のTodoアプリ
 
-### Compiles and hot-reloads for development
+
+## electronによるbuild
 ```
-yarn serve
+$ npm run electron:build
 ```
 
-### Compiles and minifies for production
+## electronの動作テスト
 ```
-yarn build
-```
+$ npm run electron:serve
 
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
