@@ -1,16 +1,24 @@
 <template>
-  <button class="es-button"
-          v-bind="$attrs">
+  <button
+      @click="click"
+      class="es-button">
     <slot></slot>
   </button>
 </template>
 
-<script>
-export default {
-  name: "EsButton"
+
+<script lang="ts">
+import {Component, Prop, Emit, Vue} from 'vue-property-decorator';
+
+@Component
+export default class EsButton extends Vue {
+
+  @Emit()
+  public click(e: MouseEvent) {
+  }
+
 }
 </script>
-
 <style scoped>
 
 .es-button {
