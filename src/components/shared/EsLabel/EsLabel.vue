@@ -4,14 +4,17 @@
   </label>
 </template>
 
-<script>
-export default {
-  name: "EsLabel"
+
+<script lang="ts">
+import {Component, Prop, Vue} from 'vue-property-decorator';
+
+@Component
+export default class EsLabel extends Vue {
 }
 </script>
 
 <style scoped>
-.es-label{
+.es-label {
   display: block;
 }
 </style>

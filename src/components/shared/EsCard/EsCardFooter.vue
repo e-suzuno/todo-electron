@@ -4,9 +4,12 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "EsCardFooter"
+
+<script lang="ts">
+import {Component, Prop, Vue} from 'vue-property-decorator';
+
+@Component
+export default class EsCardFooter extends Vue {
 }
 </script>
 
