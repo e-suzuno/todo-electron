@@ -1,0 +1,22 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+    // インデントが 2 スペースであること (true・"spaces"・2)
+    "indent": [true, "spaces", 2],
+    "interface-name": false,
+    // 空行が2行以上続かないこと (true)
+    "no-consecutive-blank-lines": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    // シングルクォートを使用すること (true・"single")
+    "quotemark": [true, "single"]
+  }
+}

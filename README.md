@@ -1,7 +1,6 @@
 # todo-electron
 
-electron + vue3 のTodoアプリ
-
+electron + vue のTodoアプリ
 
 
 ## electronによるbuild
@@ -9,8 +8,7 @@ electron + vue3 のTodoアプリ
 $ npm run electron:build
 ```
 
-
 ## electronの動作テスト
 ```
 $ npm run electron:serve
-```
+
