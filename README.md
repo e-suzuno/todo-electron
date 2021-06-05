@@ -1,6 +1,6 @@
 # todo-electron
 
-electron + vue3 のTodoアプリ
+electron + vue のTodoアプリ
 
 
 ## electronによるbuild
